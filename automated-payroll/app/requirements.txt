@@ -1,0 +1,1 @@
+Flask>=2.2\noracledb>=1.1.0\nJinja2\n

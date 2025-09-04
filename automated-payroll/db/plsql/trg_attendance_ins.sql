@@ -1,0 +1,1 @@
+CREATE OR REPLACE TRIGGER payroll.trg_attendance_ins\nAFTER INSERT ON attendance\nFOR EACH ROW\nBEGIN\n  -- For example: auto-calculate working_hours from in_time/out_time or mark late arrivals\n  -- Placeholder: calculate anything needed when attendance is inserted\n  NULL;\nEND;\n/\n

@@ -1,0 +1,1 @@
+-- Run monthly payroll for September 2025\nBEGIN\n  payroll.pkg_payroll.RUN_MONTHLY_PAYROLL(p_month => '2025-09', p_created_by => 'hr_admin');\nEND;\n/\nCOMMIT;\n\n-- View results\nSELECT s.*, e.emp_code, e.first_name, e.last_name\nFROM salary_details s JOIN employees e ON s.emp_id = e.emp_id\nORDER BY s.salary_id;\n

@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Payroll Reports</title>
+    <link rel="stylesheet" href="/static/css/style.css"/>
+  </head>
+  <body>
+    <h1>Payroll Reports</h1>
+    <form action="/payslip" method="get" class="form">
+      <label>Employee Code: <input name="emp_code"/></label><br/>
+      <label>Month (YYYY-MM): <input name="month"/></label><br/>
+      <button type="submit">Get Payslip</button>
+    </form>
+  </body>
+</html>

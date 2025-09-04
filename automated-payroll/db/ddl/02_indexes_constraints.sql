@@ -1,0 +1,1 @@
+CREATE INDEX idx_att_emp_date ON attendance(emp_id, att_date);\nCREATE UNIQUE INDEX idx_emp_code ON employees(emp_code);\n\n-- Simple sequence-like behavior is handled by IDENTITY columns; if older Oracle, create sequences.\n
